@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\DomicilioUsers;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(100)->create();
+        // User::factory(100)->create();
+        // DomicilioUsers::factory(100)->make();
+        DomicilioUsers::factory(100)->create();
     }
 }
